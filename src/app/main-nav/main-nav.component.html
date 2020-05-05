@@ -24,10 +24,10 @@
     </nav>
   </mat-toolbar-row>
 </mat-toolbar> -->
-<div id="home-container">
+<!-- <div id="home-container">
   <div class="r1">
-    <div class="r1-inner">
-      <nav class="home-main-nav">
+    <div class="r1-inner"> -->
+      <!-- <nav class="home-main-nav">
         <ul>
           <li class="cursive">
             <a href="#">Assn2</a>
@@ -42,16 +42,59 @@
             <a [routerLink]="'/artist'">Artist</a>
           </li>
         </ul>
-      </nav>
-      <div class="gallery-description">
-        <h2 class="cursive drop-shadow">Jacques-Louis David</h2>
-        <p class="drop-shadow">The Intervention of the Sabine Women was painted in</p>
-        <p class="drop-shadow">1799 and resides in the Musée du Louvre, Paris.</p>
-        <button class="btn btn-primary">Learn More</button>
-      </div>
+      </nav> -->
+    <div>
+      <ul class="nav justify-content-end nav-action-container">
+        <li class="nav-item">
+          <button mat-raised-button color="primary" (click)="createCar()">Add New Car</button>
+        </li>
+        <li class="nav-item">
+          <button mat-raised-button color="primary" (click)="createClothing()">Add New Clothing</button>
+        </li>
+        <li class="nav-item">
+          <button mat-raised-button color="primary" (click)="showCars()">Get Cars</button>
+        </li>
+        <li class="nav-item">
+          <button mat-raised-button color="primary" (click)="refresh()">Get Clothings</button>
+          </li>
+        <li class="nav-item">
+          <button mat-raised-button color="primary" (click)="getClothingByColor()">Pink</button>
+        </li>
+      </ul>
     </div>
-  </div>
+      <section class="animated-grid">
+        <div class="card" *ngFor="let clothing of clothings; let i = index">
+          <img class="cover" [src]="clothing.clothing_url" alt="bike">
+          <!-- <div class="card"> -->
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <!-- <p class="card-text">Tshirt</p> -->
+          <!-- </div> -->
+          <!-- <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+          </div> -->
+        </div>
+        <div class="card" *ngFor="let car of cars; let i = index">
+          <img class="cover" [src]="car.image_url" alt="bike">
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </section>
+
+
+        <!-- <div class="card" *ngFor="let car of cars; let i = index">
+          <img class="cover" [src]="car.image_url" alt="bike">
+          <h5 class="card-title">Card title</h5>
+        </div> -->
+        <!-- <div
+        class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1558981359-219d6364c9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')"
+      ></div> -->
+ 
+
+
+      
+    <!-- </div>
+  </div> -->
   <div class="r2">
     <!-- <app-art-work-card *ngFor="let artwork of artworks" [artwork]="artwork"></app-art-work-card> -->
   </div>
-</div>
+<!-- </div> -->
