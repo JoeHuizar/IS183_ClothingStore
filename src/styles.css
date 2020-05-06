@@ -105,7 +105,7 @@ body {
   width: 100vw;
   max-height: 100vh;
   max-width: 100vw;
-  overflow: scroll;
+  /* overflow: scroll; */
   background-color: #f1f1f1;
 }
 
@@ -132,5 +132,5 @@ footer {
   width: 100%;
   height: 60px;
   line-height: 60px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
