@@ -4,6 +4,7 @@
     float: left;
     margin-right: 20px;
     width: 100%;
+    background-color: red;
   }
   .banner-class > img{
     object-fit: cover;
@@ -92,3 +93,13 @@
     text-align: left;
   }
   /* end home page css */
+
+.main-container{
+  height: 100%;
+}
+
+.row {
+  display: grid;
+  grid-template-rows: .5fr 3fr 1fr;
+  height: 100%;
+}
