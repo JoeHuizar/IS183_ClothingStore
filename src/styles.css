@@ -127,3 +127,7 @@ body {
   background-color: #343434;
   color: #FFF;
 }
+
+.test {
+  background-color: red;
+}
