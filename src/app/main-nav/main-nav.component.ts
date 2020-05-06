@@ -162,4 +162,8 @@ export class MainNavComponent implements OnInit {
   goToEdit() {
     this.router.navigate(['app-cart']);
   }
+  navigateTo(path: string) {
+    console.log("from navigateTo")
+    this.router.navigate([path]);
+  }
 }

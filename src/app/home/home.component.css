@@ -1,4 +1,8 @@
   /* home page css */
+  .banner-img {
+    height: 80px;
+    width: 80px;
+  }
   .cursive {
     font-family: 'Cookie', cursive;
   }
