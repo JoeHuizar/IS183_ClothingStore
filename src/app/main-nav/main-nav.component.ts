@@ -158,4 +158,8 @@ export class MainNavComponent implements OnInit {
   async goToCart() {
     this.router.navigate(['app-cart']);
   }
+
+  goToEdit() {
+    this.router.navigate(['app-cart']);
+  }
 }

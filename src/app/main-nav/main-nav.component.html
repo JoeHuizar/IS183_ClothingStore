@@ -57,8 +57,11 @@
         <li class="nav-item">
           <button mat-raised-button color="primary" (click)="refresh()">Get Clothings</button>
           </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <button mat-raised-button color="primary" (click)="getClothingByColor()">Pink</button>
+        </li> -->
+        <li class="nav-item">
+          <a [routerLink]="'/app-cart'">Edit Inventory</a>
         </li>
       </ul>
     </div>
@@ -98,3 +101,5 @@
     <!-- <app-art-work-card *ngFor="let artwork of artworks" [artwork]="artwork"></app-art-work-card> -->
   </div>
 <!-- </div> -->
+
+<router-outlet></router-outlet>

@@ -3,6 +3,7 @@ import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './home/home.component';
 
+
 const appRoutes: Routes = [
   {
     path: '',
@@ -13,7 +14,11 @@ const appRoutes: Routes = [
   }, {
     path: '**',
     component: LoginComponent
+  }, {
+    path: 'app-cart',
+    component: CartComponent
   }
+
 ];
 
 export const AppRoutes = RouterModule.forRoot(appRoutes);
