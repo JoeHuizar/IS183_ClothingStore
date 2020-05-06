@@ -1,6 +1,6 @@
   /* home page css */
   .banner-class {
-    height: 50%;
+    min-height: 50%;
     float: left;
     margin-right: 20px;
     width: 100%;
@@ -8,8 +8,8 @@
   .banner-class > img{
     object-fit: cover;
     margin: 10px;
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
   }
   .cursive {
     font-family: 'Cookie', cursive;
