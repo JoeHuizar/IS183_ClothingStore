@@ -14,13 +14,13 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    const token = localStorage.getItem('id_token');
-    if (token == null) {
-      this.loggedIn = true;
-      this.router.navigate(['login']);
-    } else {
-      this.loggedIn = true;
-    }
+  //   const token = localStorage.getItem('id_token');
+  //   if (token == null) {
+  //     this.loggedIn = true;
+  //     this.router.navigate(['login']);
+  //   } else {
+  //     this.loggedIn = true;
+  //   }
   }
 
 }
