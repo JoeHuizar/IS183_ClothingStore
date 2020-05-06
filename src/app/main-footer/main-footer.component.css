@@ -1,10 +1,14 @@
 .site-footer
 {
-  background-color:#F8F9FA;
-  padding:45px 0 20px;
+  background-color: aqua;
+  /* background-color:#F8F9FA; */
+  /* padding:45px 0 20px; */
+  /* padding: 10px 0px 0px; */
+  height: 300px;
   font-size:15px;
   line-height:24px;
   color:#737373;
+  /* overflow: hidden; */
 }
 .site-footer hr
 {
@@ -76,7 +80,7 @@
 {
   .site-footer [class^=col-]
   {
-    margin-bottom:30px
+    /* margin-bottom:30px */
   }
 }
 @media (max-width:767px)
