@@ -1,15 +1,48 @@
   /* home page css */
+  .home-container {
+    background-color: red;
+
+  }
   .banner-class {
-    min-height: 50%;
-    float: left;
-    margin-right: 20px;
+    height: 650px;
     width: 100%;
+    position: relative;
   }
   .banner-class > img{
     object-fit: cover;
-    margin: 10px;
-    /* height: 100%;
-    width: 100%; */
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    filter: brightness(75%);
+  }
+  .text-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .text-container > h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .text-container > h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .spacer {
+    margin-right: 5px;
+  }
+  
+  .center-buttons {
+    align-items: center;
   }
   .cursive {
     font-family: 'Cookie', cursive;

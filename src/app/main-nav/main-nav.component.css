@@ -37,6 +37,11 @@
   padding: 0 15px;
   height: 80px;
   line-height: 80px;
+  color:#000;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
 }
 
 .navbar-toggle {
