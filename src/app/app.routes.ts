@@ -18,6 +18,9 @@ const appRoutes: Routes = [
   }, {
     path: 'app-men',
     component: MenComponent
+  }, {
+    path: "**",
+    component: HomeComponent
   }
 
 ];
