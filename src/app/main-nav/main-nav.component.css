@@ -28,6 +28,9 @@
 .brand {
   height: 65px;
 } */
+.pointer-cursor {
+  cursor: pointer;
+}
 
 .navbar {
   min-height: 80px;

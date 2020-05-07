@@ -22,6 +22,7 @@ export class CartComponent implements OnInit {
   bikes: Array<IBike> = [];
   myName = '';
   cars = [];
+  clothings = [];
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
@@ -30,16 +31,32 @@ export class CartComponent implements OnInit {
   ) { }
 
   async ngOnInit() {
-    await this.refresh();
+    // await this.refresh();
   }
 
   async refresh() {
+    this.clothings = await this.getClothings('clothing');
+  }
+
+  async getClothingByColor() {
+    console.log('from pink')
+    this.clothings = await this.getClothings('Clothing/get-clothing-by-color/Pink');
+  }
+
+  async showCars() {
     this.cars = await this.getCars('car');
   }
 
   // getCars('car');
   async getCars(path: string) {
     const resp = await this.http.get(path);
+    console.log('resp from getCars(), resp')
+    return resp;
+  }
+
+  async getClothings(path: string) {
+    const resp = await this.http.get(path);
+    console.log('resp from getClothing(), resp')
     return resp;
   }
 
@@ -50,16 +67,35 @@ export class CartComponent implements OnInit {
       year: null
     };
     const resp = await this.http.post('car', car);
-    if (resp) {
+    console.log('from createCar resp: ', resp);
+    if(resp){
       // this.refresh();
       this.cars.unshift(resp);
     } else {
-      this.toastService.showToast('danger', 3000, 'Failed to create car!');
+      this.toastService.showToast('Danger', 3000, 'Car creation failed!');
+    }
+    return resp;
+  }
+
+  async createClothing() {
+    const clothing = {
+      image_url: null,
+      clothing_type: null,
+      color: null
+    };
+    const resp = await this.http.post('clothing', clothing);
+    console.log('from createClothing resp: ', resp);
+    if(resp){
+      // this.refresh();
+      this.clothings.unshift(resp);
+    } else {
+      this.toastService.showToast('Danger', 3000, 'Car creation failed!');
     }
     return resp;
   }
 
   async updateCar(car: any) {
+    console.log('from updateCar car: ', car);
     const resp = await this.http.put(`car/id/${car.id}`, car);
     if (resp) {
       this.toastService.showToast('success', 3000, 'Car updated successfully!');
@@ -67,8 +103,38 @@ export class CartComponent implements OnInit {
     return resp;
   }
 
+  async updateClothing(clothing: any) {
+    console.log('from updateClothing Clothing: ', clothing);
+    const resp = await this.http.put(`clothing/id/${clothing.id}`, clothing);
+    if (resp) {
+      this.toastService.showToast('success', 3000, 'Clothing updated successfully!');
+    }
+    return resp;
+  }
+
   async removeCar(car: any, index: number) {
-    this.cars.splice(index, 1);
+    console.log('from removeCar...', index);
+    // this.cars.splice(index, 1);
+    const resp = await this.http.delete(`car/id/${car.id}`);
+    console.log('resp from removeCar...', resp);
+    if (resp) {
+      this.refresh();
+    } else {
+      this.toastService.showToast('danger', 3000, 'Delete car failed!');
+    }
+  }
+
+  async removeClothing(clothing: any, index: number) {
+    console.log('from removeClothing...', index);
+    // this.cars.splice(index, 1);
+    const resp = await this.http.delete(`clothing/id/${clothing.id}`);
+    console.log('resp from removeClothing...', resp);
+    if (resp) {
+      this.refresh();
+    } else {
+      this.toastService.showToast('danger', 3000, 'Delete clothing failed!');
+    }
+
   }
 
 }

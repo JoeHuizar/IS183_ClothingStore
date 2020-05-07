@@ -17,6 +17,7 @@ import { SharedServiceModule } from '../shared-service/shared-service.module';
 import { MenComponent } from './men/men.component';
 import { MainFooterComponent } from './main-footer/main-footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     CartComponent,
     MenComponent,
     MainFooterComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
