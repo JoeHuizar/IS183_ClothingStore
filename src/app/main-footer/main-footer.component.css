@@ -2,16 +2,21 @@
 
 .site-footer
 {
-  background-color: aqua;
+  background-color: #2EC4B6;
   /* background-color:#F8F9FA; */
   /* padding:45px 0 20px; */
   /* padding: 10px 0px 0px; */
-  height: 300px;
+  height: 100%;
   font-size:15px;
   line-height:24px;
   color:#737373;
   /* overflow: hidden; */
 }
+
+.container {
+  max-height: 185px;
+}
+
 .site-footer hr
 {
   border-top-color:#bbb;
