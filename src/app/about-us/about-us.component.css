@@ -1,7 +1,7 @@
 #about-container {
     height: 100%;
     /* overflow: auto; */
-    background: #E71D36;
+    background: #4ECDC4;
   }
   
   #about-container-inner {
@@ -132,15 +132,16 @@
   
   .top-section {
     width: 100%;
-    background-color: #FF9F1C;
+    background-color: #FF6B6B;
     height: 210px;
     margin: 10px 0px;
+    padding-left: 1em;
     /* overflow: hidden; */
   }
   
-  .top-inner-section {
-    /* overflow: auto; */
-  }
+  /* .top-inner-section {
+    overflow: auto;
+  } */
   
   .bottom-section {
     width: 100%;
