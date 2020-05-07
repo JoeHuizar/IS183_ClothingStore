@@ -1,60 +1,54 @@
-<p>
-  men works!
-</p>
-
-
 <div class="main-container">
   <div class="three-row-body">
+    
+    <app-main-nav></app-main-nav>
 
-    <div>
-      <app-main-nav></app-main-nav>
-    </div>
 
-    <div>
-      <div>
-        <ul class="nav justify-content-end nav-action-container">
-          <li class="nav-item">
-            <button mat-raised-button color="primary" (click)="createCar()">Add New Car</button>
-          </li>
-          <li class="nav-item">
-            <button mat-raised-button color="primary" (click)="createClothing()">Add New Clothing</button>
-          </li>
-          <li class="nav-item">
-            <button mat-raised-button color="primary" (click)="showCars()">Get Cars</button>
-          </li>
-          <li class="nav-item">
-            <button mat-raised-button color="primary" (click)="refresh()">Get Clothings</button>
-            </li>
-          <!-- <li class="nav-item">
-            <button mat-raised-button color="primary" (click)="getClothingByColor()">Pink</button>
-          </li> -->
-          <li class="nav-item">
-            <button (click)="goToEdit()">Edit Inventory</button> 
-          </li>
-        </ul>
-      </div>
-      <section class="animated-grid">
+    <div class="content-container">
+      <section>
+        <nav>
+          <ul>
+            <li><a href="#">Shirts</a></li>
+            <li><a href="#">Pants</a></li>
+            <li><a href="#">Jackets</a></li>
+            <li><a href="#">Shorts</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Backpack and Bags</a></li>
+            <li><a href="#">Accesories</a></li>
+          </ul>
+        </nav>
+
+        <article>
+          <img src="../../assets/men-banner.webp">
+          <h1>London</h1>
+          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a
+            metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back
+            to its founding by the Romans, who named it Londinium.</p>
+        </article>
+      </section>
+
+      <!-- Animated grid from lab -->
+      <!-- <section class="animated-grid">
         <div class="card" *ngFor="let clothing of clothings; let i = index">
           <img class="cover" [src]="clothing.clothing_url" alt="bike">
-          <!-- <div class="card"> -->
-            <!-- <h5 class="card-title">Card title</h5> -->
-            <!-- <p class="card-text">Tshirt</p> -->
-          <!-- </div> -->
-          <!-- <div class="card-body">
+          <div class="card">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Tshirt</p>
+          </div>
+          <div class="card-body">
             <a href="#" class="card-link">Card link</a>
-          </div> -->
+          </div>
         </div>
         <div class="card" *ngFor="let car of cars; let i = index">
           <img class="cover" [src]="car.image_url" alt="bike">
           <h5 class="card-title">Card title</h5>
         </div>
-      </section>
+      </section> -->
     </div>
 
     <app-main-footer></app-main-footer>
 
   </div>
 </div>
-
-
-
+<router-outlet></router-outlet>

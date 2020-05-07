@@ -123,3 +123,46 @@ body {
   grid-area: 🌟;
   animation-delay: calc(13 * var(--stagger-delay));
 }
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background: #F8F9FA;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding-left: 60px;
+  text-align: left;
+}
+nav > ul > li {
+  width: 100%;
+}
+
+a {
+  color: #8F9092;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: block;
+}
+a:hover {
+  color: rgb(78, 78, 78);
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
