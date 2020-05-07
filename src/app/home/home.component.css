@@ -1,13 +1,20 @@
   /* home page css */
   .home-container {
     background-color: red;
-
-  }
+    height: 100%;
+    }
   .banner-class {
     height: 650px;
     width: 100%;
     position: relative;
   }
+
+  .carousel-inner > .item > img { width:100%; height:570px; }
+
+  /* .picture-contain{
+    height: 20%;
+    width: 100%;
+  } */
   .banner-class > img{
     object-fit: cover;
     padding: 10px;
@@ -53,43 +60,43 @@
   .drop-shadow {
     text-shadow: 1px 2px 3px #000;
   }
-  #home-container {
+  /* #home-container {
     height: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr;
-  }
+  } */
   
-  .r1 {
+  /* .r1 {
     background-color: black;
-    /* background-image: url('assets/img/david.jpg'); */
+    background-image: url('assets/img/david.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-  }
+  } */
   
-  .r1-inner {
+  /* .r1-inner {
     width: 80%;
     height: 100%;
     margin: 0px auto;  
-  }
-  .home-main-nav {
+  } */
+  /* .home-main-nav {
     padding-top: 25px;
-  }
-  .home-main-nav > ul {
+  } */
+  /* .home-main-nav > ul {
     list-style-type: none;
-  }
-  .home-main-nav > ul > li {
+  } */
+  /* .home-main-nav > ul > li {
     display: inline;
     font-size: 1.75em;
     
-  }
-  .home-main-nav > ul > li > a {
+  } */
+  /* .home-main-nav > ul > li > a {
     color: #FFF;
     text-decoration: none;
     padding: 15px .5em;
     text-shadow:2px 2px 3px #000;
-  }
-  .home-main-nav > ul > li:first-child {
+  } */
+  /* .home-main-nav > ul > li:first-child {
     font-family: 'Cookie', cursive;
   }
   .home-main-nav > ul > li:first-child a:hover  {
@@ -123,15 +130,16 @@
   }
   .left-align {
     text-align: left;
-  }
+  } */
   /* end home page css */
 
   .main-container {
     height: 100%;
   }
 
-  .row {
+  .three-row-body {
     display: grid;
-    grid-template-rows: .5fr 3fr 1fr;
+    grid-template-rows: .5fr 1.5fr 1fr;
     height: 100%;
+    width: 100%;
   }

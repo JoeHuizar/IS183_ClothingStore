@@ -1,3 +1,62 @@
-<p>
-  men works!
-</p>
+
+
+<div class="main-container">
+  <div class="three-row-body">
+
+    <div>
+      <app-main-nav></app-main-nav>
+    </div>
+
+    <div>
+      <div>
+        <ul class="nav justify-content-end nav-action-container">
+          <li class="nav-item">
+            <button mat-raised-button color="primary" (click)="createCar()">Add New Car</button>
+          </li>
+          <li class="nav-item">
+            <button mat-raised-button color="primary" (click)="createClothing()">Add New Clothing</button>
+          </li>
+          <li class="nav-item">
+            <button mat-raised-button color="primary" (click)="showCars()">Get Cars</button>
+          </li>
+          <li class="nav-item">
+            <button mat-raised-button color="primary" (click)="refresh()">Get Clothings</button>
+            </li>
+          <!-- <li class="nav-item">
+            <button mat-raised-button color="primary" (click)="getClothingByColor()">Pink</button>
+          </li> -->
+          <li class="nav-item">
+            <a [routerLink]="'/app-store'">Edit Inventory</a>
+          </li>
+        </ul>
+      </div>
+      <section class="animated-grid">
+        <div class="card" *ngFor="let clothing of clothings; let i = index">
+          <img class="cover" [src]="clothing.clothing_url" alt="bike">
+          <!-- <div class="card"> -->
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <!-- <p class="card-text">Tshirt</p> -->
+          <!-- </div> -->
+          <!-- <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+          </div> -->
+        </div>
+        <div class="card" *ngFor="let car of cars; let i = index">
+          <img class="cover" [src]="car.image_url" alt="bike">
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </section>
+    </div>
+
+    <app-main-footer></app-main-footer>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
