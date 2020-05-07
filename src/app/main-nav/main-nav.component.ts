@@ -159,8 +159,25 @@ export class MainNavComponent implements OnInit {
     this.router.navigate(['app-cart']);
   }
 
-  goToEdit() {
-    this.router.navigate(['app-cart']);
+  goToAboutUs() {
+    console.log("from gotoedit")
+    this.router.navigate(['about-us']);
+  }
+  goToHome() {
+    console.log("from gotoedit")
+    this.router.navigate(['']);
+  }
+  goToLogin() {
+    console.log("from gotoedit")
+    this.router.navigate(['login']);
+  }
+  goToMen() {
+    console.log("from gotoedit")
+    this.router.navigate(['app-men']);
+  }
+  goToWomen() {
+    console.log("from gotoedit")
+    this.router.navigate(['app-women']);
   }
   navigateTo(path: string) {
     console.log("from navigateTo")
