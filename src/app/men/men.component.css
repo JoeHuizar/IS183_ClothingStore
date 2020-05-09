@@ -209,8 +209,9 @@ section:after {
 .men-page2 {
   display: grid;
   grid-template-rows: 1fr 11fr;
-  background-color: cyan;
+  background-color: #f8f9fa;
 }
+
 .men-nav {
   background-color: #f8f9fa;
   /* background-color: #FF6B6B; */
@@ -231,3 +232,13 @@ a {
   height: 300px;
   object-fit: cover;
 }
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 70%;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+
