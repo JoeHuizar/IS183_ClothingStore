@@ -34,6 +34,7 @@
 
 .navbar {
   min-height: 80px;
+  /* box-shadow: 0px 3px 15px rgba(0,0,0,0.2); */
 }
 
 .navbar-brand {
@@ -44,7 +45,8 @@
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
-  letter-spacing:2px
+  letter-spacing:2px;
+
 }
 
 .navbar-toggle {
@@ -182,4 +184,8 @@ body {
 .card:last-child {
   grid-area: 🌟;
   animation-delay: calc(13 * var(--stagger-delay));
+}
+
+ul#navigation .active {
+  font-weight: bold;
 }

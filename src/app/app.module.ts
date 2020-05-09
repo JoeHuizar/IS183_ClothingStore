@@ -10,6 +10,8 @@ import { AppRoutes } from './app.routes';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialDesignModule } from '../material-design/material-design.module';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
@@ -38,7 +40,8 @@ import { AdminComponent } from './admin/admin.component';
     AppRoutes,
     BrowserAnimationsModule,
     MaterialDesignModule,
-    SharedServiceModule
+    SharedServiceModule,
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

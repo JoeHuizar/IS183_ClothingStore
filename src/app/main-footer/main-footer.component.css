@@ -4,13 +4,11 @@
 {
   background-color: #1A535C;
   /* background-color:#F8F9FA; */
-  /* padding:45px 0 20px; */
-  /* padding: 10px 0px 0px; */
+  padding:35px 0 20px;
   height: 100%;
   font-size:15px;
-  line-height:24px;
+  line-height:20px;
   color:#F7FFF7;
-  /* overflow: hidden; */
 }
 
 .container {
@@ -85,16 +83,16 @@
 }
 @media (max-width:991px)
 {
-  /* .site-footer [class^=col-]
+  .site-footer [class^=col-]
   {
     margin-bottom:30px
-  } */
+  }
 }
 @media (max-width:767px)
 {
   .site-footer
   {
-    padding-bottom:0
+    padding-bottom:0;
   }
   .site-footer .copyright-text,.site-footer .social-icons
   {

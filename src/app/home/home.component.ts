@@ -22,5 +22,8 @@ export class HomeComponent implements OnInit {
   //     this.loggedIn = true;
   //   }
   }
-
+  goToMen() {
+    console.log("from gotoedit")
+    this.router.navigate(['app-men']);
+  }
 }
