@@ -3,11 +3,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
   align-items: center;
+  background-color: #1A535C;
 }
 
 .login-form {
   padding: 25px;
-  background-color: #FFF;
+  background-color: #FF6B6B;
 }
 .login-logo > img {
   object-fit: cover;
@@ -15,4 +16,8 @@
   display: block;
   height: 200px;
   margin: -25px -25px 25px -25px;
+}
+
+.text-field-color-red {
+  background-color: #FFE66D !important;
 }
