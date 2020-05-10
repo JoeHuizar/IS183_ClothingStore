@@ -20,6 +20,7 @@ import { MenComponent } from './men/men.component';
 import { MainFooterComponent } from './main-footer/main-footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AdminComponent } from './admin/admin.component';
+import { WomenComponent } from './women/women.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AdminComponent } from './admin/admin.component';
     MenComponent,
     MainFooterComponent,
     AboutUsComponent,
-    AdminComponent
+    AdminComponent,
+    WomenComponent
   ],
   imports: [
     BrowserModule,
