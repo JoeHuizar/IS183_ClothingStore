@@ -4,7 +4,7 @@ import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './home/home.component';
 import { MenComponent } from './men/men.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-
+import { WomenComponent } from './women/women.component'
 
 const appRoutes: Routes = [
   {
@@ -22,6 +22,9 @@ const appRoutes: Routes = [
   }, {
     path: 'about-us',
     component: AboutUsComponent
+  }, {
+    path: "app-women",
+    component: WomenComponent
   }, {
     path: "**",
     component: HomeComponent

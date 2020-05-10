@@ -135,8 +135,9 @@ export class MenComponent implements OnInit {
     }
 
   }
-
-
+  goToItem() {
+    console.log('from men-card')
+  }
 
  
 
