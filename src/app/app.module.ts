@@ -43,7 +43,7 @@ import { WomenComponent } from './women/women.component';
     BrowserAnimationsModule,
     MaterialDesignModule,
     SharedServiceModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

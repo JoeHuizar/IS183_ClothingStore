@@ -16,13 +16,13 @@
       <div class="men-page">
         <div class="men-nav">
           <ul>
-            <li><a href="#">Shirts</a></li>
-            <li><a href="#">Pants</a></li>
-            <li><a href="#">Jackets</a></li>
-            <li><a href="#">Shorts</a></li>
-            <li><a href="#">Shoes</a></li>
-            <li><a href="#">Backpack and Bags</a></li>
-            <li><a href="#">Accesories</a></li>
+            <li><a [routerLink]="" (click)="filter-shirts()">Shirts</a></li>
+            <li><a [routerLink]="" (click)="filter-pants()">Pants</a></li>
+            <li><a [routerLink]="" (click)="filter-jackets()">Jackets</a></li>
+            <li><a [routerLink]="" (click)="filter-shorts()">Shorts</a></li>
+            <li><a [routerLink]="" (click)="filter-shoes()">Shoes</a></li>
+            <li><a [routerLink]="" (click)="filter-bags()">Backpack and Bags</a></li>
+            <li><a [routerLink]="" (click)="filter-acc()">Accesories</a></li>
           </ul>
         </div>
 
@@ -35,9 +35,11 @@
                 Size
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">XS</a>
+                <a class="dropdown-item" href="#">Small</a>
+                <a class="dropdown-item" href="#">Medium action</a>
+                <a class="dropdown-item" href="#">Large</a>
+                <a class="dropdown-item" href="#">XL</a>
               </div>
             </div>
             <div class="dropdown">
@@ -46,9 +48,9 @@
                 Price
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Under $50</a>
+                <a class="dropdown-item" href="#">Under $100</a>
+                <a class="dropdown-item" href="#">Under $200</a>
               </div>
             </div>
             <div class="dropdown">
@@ -57,9 +59,17 @@
                 Color
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#"><i class="dot red"></i>Red</a>
+                <a class="dropdown-item" href="#"><i class="dot yellow"></i>Yellow</a>
+                <a class="dropdown-item" href="#"><i class="dot blue"></i>Blue</a>
+                <a class="dropdown-item" href="#"><i class="dot green"></i>Green</a>
+                <a class="dropdown-item" href="#"><i class="dot black"></i>Black</a>
+                <a class="dropdown-item" href="#"><i class="dot white"></i>White</a>
+                <a class="dropdown-item" href="#"><i class="dot pink"></i>Pink</a>
+                <a class="dropdown-item" href="#"><i class="dot grey"></i>Grey</a>
+                <a class="dropdown-item" href="#"><i class="dot purple"></i>Purple</a>
+                <a class="dropdown-item" href="#"><i class="dot orange"></i>Orange</a>
+
               </div>
             </div>
             <div class="dropdown">
@@ -68,31 +78,36 @@
                 Category
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Shirts</a>
+                <a class="dropdown-item" href="#">Pants</a>
+                <a class="dropdown-item" href="#">Jackets</a>
+                <a class="dropdown-item" href="#">Shorts</a>
+                <a class="dropdown-item" href="#">Shoes</a>
+                <a class="dropdown-item" href="#">Backpack and Bags</a>
+                <a class="dropdown-item" href="#">Accesories</a>
+
               </div>
             </div>
           </div>
           <hr>
           <div class="men-card" (click)="goToItem()">
             <div>
-              <img class="img-fit pointer" src="../../assets/men-card1.webp">
+              <img class="img-fit pointer" src="../../assets/men-card1.jpg">
               <h3 class="pointer">The Air Crew Tee</h3>
               <a href="#">$30.00</a>
             </div>
             <div>
-              <img class="img-fit pointer" src="../../assets/men-card1.webp">
+              <img class="img-fit pointer" src="../../assets/men-card1.jpg">
               <h3 class="pointer">The Air Crew Tee</h3>
               <a href="#">$30.00</a>
             </div>
             <div>
-              <img class="img-fit pointer" src="../../assets/men-card1.webp">
+              <img class="img-fit pointer" src="../../assets/men-card1.jpg">
               <h3 class="pointer">The Air Crew Tee</h3>
               <a href="#">$30.00</a>
             </div>
             <div>
-              <img class="img-fit pointer" src="../../assets/men-card1.webp">
+              <img class="img-fit pointer" src="../../assets/men-card1.jpg">
               <h3 class="pointer">The Air Crew Tee</h3>
               <a href="#">$30.00</a>
             </div>
