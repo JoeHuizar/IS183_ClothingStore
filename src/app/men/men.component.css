@@ -130,3 +130,40 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  align-items: left;
+  margin-right: 10px;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.black {
+  background-color: black;
+}
+.white {
+  background-color: white;
+  border: .5px solid grey;
+}
+.grey {
+  background-color: gray;
+}
+.purple {
+  background-color: purple;
+}
+.orange {
+  background-color: orange;
+}

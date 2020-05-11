@@ -12,8 +12,8 @@
             <h2>A different perspective on clothing</h2>
             <div class="button-container">
               <div class="btn-group">
-                <button (click)="goToMen()" type="button" class="btn btn-light btn-lg mr-3">Shop Men</button>
-                <button type="button" class="btn btn-light btn-lg">Shop Women</button>
+                <button [routerLink]="['/app-men']" type="button" class="btn btn-light btn-lg mr-3">Shop Men</button>
+                <button [routerLink]="['/app-women']" type="button" class="btn btn-light btn-lg">Shop Women</button>
               </div>
             </div>
             
