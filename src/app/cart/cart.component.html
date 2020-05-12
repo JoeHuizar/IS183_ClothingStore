@@ -27,7 +27,7 @@
 
 <div class="contact-grid">
   <div class="gallery-grid">
-    <mat-card class="example-card" *ngFor="let car of cars; let i = index">
+    <mat-card class="example-card" *ngFor="let clothing of clothings; let i = index">
       <mat-card-content>
         <img class="cover" [src]="car.image_url" alt="bike">
         <p>
@@ -99,7 +99,7 @@
         </p>
         <p>
           <label for="price">Price</label>
-          <input [(ngModel)]="car.price" type="text" class="form-control" placeholder="Price" aria-label="price"
+          <input [(ngModel)]="clothing.price" type="text" class="form-control" placeholder="$00.00" aria-label="price"
             aria-describedby="basic-addon1">
         </p>
         <p>
@@ -115,8 +115,8 @@
       </mat-card-content>
       <mat-card-actions>
         <div class="btn-group pull-right">
-          <button mat-raised-button color="primary" class="pull-right" (click)="updateCar(car)">Save</button>
-          <button mat-raised-button color="warn" (click)='removeCar(car, i)' >Delete</button>
+          <button mat-raised-button color="primary" class="pull-right" (click)="updateClothing(clothing)">Save</button>
+          <button mat-raised-button color="warn" (click)='removeClothing(clothing, i)' >Delete</button>
         </div>
       </mat-card-actions>
     </mat-card>

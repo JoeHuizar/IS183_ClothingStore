@@ -24,6 +24,11 @@ export class HttpService {
     console.log('resp from http service get() resp: ', resp.json());
     return resp.json();
   }
+  async getByColor(path: string) {
+    const resp = await this.http.get(this.apiURL + path, this.headers).toPromise();
+    console.log('resp from http service get() resp: ', resp.json());
+    return resp.json();
+  }
 
   //post('car', {make: 'Nissan', model: '350Z'});
   async post(path: string, payload: any) {

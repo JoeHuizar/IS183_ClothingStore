@@ -38,11 +38,6 @@ export class CartComponent implements OnInit {
     this.clothings = await this.getClothings('clothing');
   }
 
-  async getClothingByColor() {
-    console.log('from pink')
-    this.clothings = await this.getClothings('Clothing/get-clothing-by-color/Pink');
-  }
-
   async showCars() {
     this.cars = await this.getCars('car');
   }
