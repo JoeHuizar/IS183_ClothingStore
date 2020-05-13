@@ -21,6 +21,7 @@ import { MainFooterComponent } from './main-footer/main-footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AdminComponent } from './admin/admin.component';
 import { WomenComponent } from './women/women.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { WomenComponent } from './women/women.component';
     MainFooterComponent,
     AboutUsComponent,
     AdminComponent,
-    WomenComponent
+    WomenComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
