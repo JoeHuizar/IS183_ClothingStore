@@ -53,13 +53,19 @@ a:hover {
 
 .men-card {
   display: grid;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
   justify-items: center;
   text-align: center;
   grid-column-gap: 1em;
-  grid-row-gap: 1em;
+  grid-row-gap: 4em;
   margin: 30px 0px;
+  margin-right: 50px;
+  grid-auto-rows: minmax(1fr, 1fr);
 }
+.card-tall {
+  grid-row: span 2 / auto;
+}
+
 
 .img-fit {
   width: 100%;
