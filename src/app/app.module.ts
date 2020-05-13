@@ -21,6 +21,8 @@ import { MainFooterComponent } from './main-footer/main-footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AdminComponent } from './admin/admin.component';
 import { WomenComponent } from './women/women.component';
+import { TestComponent } from './test/test.component';
+import { TestService } from './test/test.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { WomenComponent } from './women/women.component';
     MainFooterComponent,
     AboutUsComponent,
     AdminComponent,
-    WomenComponent
+    WomenComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,7 @@ import { WomenComponent } from './women/women.component';
     SharedServiceModule,
     BsDropdownModule.forRoot(),
   ],
-  providers: [],
+  providers: [TestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

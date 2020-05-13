@@ -24,6 +24,7 @@ export class HttpService {
     console.log('resp from http service get() resp: ', resp.json());
     return resp.json();
   }
+  
 
   //post('car', {make: 'Nissan', model: '350Z'});
   async post(path: string, payload: any) {
@@ -64,4 +65,22 @@ export class HttpService {
       withCredentials: true
     };
   }
+
+  getClothingByColor(color): Promise<Object> {
+    return this.http.get(`${this.apiURL}clothing/get-clothing-by-color/${color}`)
+        .toPromise()
+        .then((resp) => {
+            let users = resp.json();
+            return users;
+        });
+}
+
+getClothes(): Promise<Array<Object>> {
+  return this.http.get(`${this.apiURL}clothing`)
+      .toPromise()
+      .then((resp) => {
+          return resp.json();
+      });
+}
+
 }

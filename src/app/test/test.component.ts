@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { ToastService } from '../toast/toast.service';
 import { HttpService } from '../../shared-service/http.service';
+import { TestService } from './test.service';
 
 export interface IBike {
   id?: number;
@@ -13,11 +14,11 @@ export interface IBike {
 }
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  selector: 'app-test',
+  templateUrl: './test.component.html',
+  styleUrls: ['./test.component.css']
 })
-export class CartComponent implements OnInit {
+export class TestComponent implements OnInit {
 
   bikes: Array<IBike> = [];
   myName = '';
@@ -29,7 +30,8 @@ export class CartComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private toastService: ToastService,
-    private http: HttpService
+    private http: HttpService,
+    private testService: TestService
   ) { }
 
   async ngOnInit() {
@@ -48,7 +50,7 @@ export class CartComponent implements OnInit {
   }
 
   async getClothes() {
-    this.http.getClothes().then((resp)=> {
+    this.testService.getClothes().then((resp)=> {
           this.clothes = resp;
         })
   }

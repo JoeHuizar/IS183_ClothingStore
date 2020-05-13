@@ -5,30 +5,20 @@
 </nav>
 
 <ul class="nav justify-content-end nav-action-container">
-  <li class="nav-item">
-    <button mat-raised-button color="primary" (click)="createCar()">Add New Car</button>
-  </li>
+  
   <li class="nav-item">
     <button mat-raised-button color="primary" (click)="createClothing()">Add New Clothing</button>
   </li>
+  
   <li class="nav-item">
-    <button mat-raised-button color="primary" (click)="showCars()">Get Cars</button>
-  </li>
-  <li class="nav-item">
-    <button mat-raised-button color="primary" (click)="refresh()">Get Clothings</button>
+    <button mat-raised-button color="primary" (click)="getClothes()">Get Clothings</button>
     </li>
   <!-- <li class="nav-item">
     <button mat-raised-button color="primary" (click)="getClothingByColor()">Pink</button>
   </li> -->
   <li class="nav-item">
-    <a [routerLink]="'/app-store'">Edit Inventory</a> 
-  </li>
-  <li class="nav-item">
     <button mat-raised-button color="primary" (click)="getPink('Pink')">Get Pink Only</button>
     </li>
-    <li class="nav-item">
-      <a [routerLink]="['/app-test']" class="nav-link pointer-cursor">Go to test page</a>
-      </li>
 </ul>
 
 <div class="contact-grid">
