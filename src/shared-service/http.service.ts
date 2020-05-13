@@ -24,8 +24,13 @@ export class HttpService {
     console.log('resp from http service get() resp: ', resp.json());
     return resp.json();
   }
-  async getByColor(path: string) {
-    const resp = await this.http.get(this.apiURL + path, this.headers).toPromise();
+  // async getByColor(path: string, payload: any) {
+  //   const resp = await this.http.get(this.apiURL + path + payload, this.headers).toPromise();
+  //   console.log('resp from http service get() resp: ', resp.json());
+  //   return resp.json();
+  // }
+  async getByColor(path: string, payload: any) {
+    const resp = await this.http.post(this.apiURL + path, payload, this.headers).toPromise()
     console.log('resp from http service get() resp: ', resp.json());
     return resp.json();
   }
