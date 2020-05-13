@@ -31,7 +31,7 @@ export class CartComponent implements OnInit {
   ) { }
 
   async ngOnInit() {
-    // await this.refresh();
+    await this.refresh();
   }
 
   async refresh() {
@@ -50,8 +50,8 @@ export class CartComponent implements OnInit {
   }
 
   async getClothings(path: string) {
-    const resp = await this.http.getByColor(path, 'Clothing/get-clothing-by-color/Pink');
-    console.log('resp from getClothing(),', resp)
+    const resp = await this.http.get(path);
+    console.log('resp from getClothing(), resp')
     return resp;
   }
 
