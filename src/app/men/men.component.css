@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    color: white;
+    color: #FFE66D;
     font-size: 70px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -26,7 +26,7 @@ h3 {
   text-align: left;
   font-size: 15px;
   letter-spacing: 2px;
-  color: gray;
+  color: #1A535C;
   padding-top: 20px;
 }
 hr {
@@ -39,26 +39,33 @@ hr {
 }
 
 a {
-  color: #8F9092;
+  color: #FF6B6B;
   letter-spacing: 1px;
   text-decoration: none;
   display: block;
   text-align: left;
+  font-weight: 600;
 }
 a:hover {
-  color: rgb(78, 78, 78);
+  color: #4ECDC4;
 }
 
 
 .men-card {
   display: grid;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
   justify-items: center;
   text-align: center;
   grid-column-gap: 1em;
-  grid-row-gap: 1em;
+  grid-row-gap: 4em;
   margin: 30px 0px;
+  margin-right: 50px;
+  grid-auto-rows: minmax(1fr, 1fr);
 }
+.card-tall {
+  grid-row: span 2 / auto;
+}
+
 
 .img-fit {
   width: 100%;

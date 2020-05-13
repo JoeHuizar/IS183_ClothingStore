@@ -91,7 +91,14 @@
           </div>
           <hr>
           <div class="women-card" (click)="goToItem()">
-            <div>
+            <div class="card-tall" *ngFor="let clothing of clothings; let i = index">
+              <img class="img-fit pointer" [src]="clothing.clothing_url">
+              <!-- <h3 class="pointer" >{{clothing.clothing_type}}</h3> -->
+              <h3 class="pointer" >{{clothing.clothing_name}}</h3>
+              <a><h3 class="pointer" >{{clothing.price}}</h3></a>
+              <!-- <a href="#">$30.00</a> -->
+            </div>
+            <!-- <div>
               <img class="img-fit pointer" src="../../assets/women-card1.jpg">
               <h3 class="pointer">The Air Crew Tee</h3>
               <a href="#">$30.00</a>
@@ -106,12 +113,7 @@
               <h3 class="pointer">The Air Crew Tee</h3>
               <a href="#">$30.00</a>
             </div>
-            <div>
-              <img class="img-fit pointer" src="../../assets/women-card1.jpg">
-              <h3 class="pointer">The Air Crew Tee</h3>
-              <a href="#">$30.00</a>
-            </div>
-          </div>
+          </div> -->
 
         </div>
       </div>

@@ -29,7 +29,8 @@ export class MenComponent implements OnInit {
     private http: HttpService
   ) { }
 
-  ngOnInit() {
+  async ngOnInit() {
+    await this.refresh();
   }
 
 

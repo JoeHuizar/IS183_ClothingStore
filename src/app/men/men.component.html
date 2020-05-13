@@ -34,7 +34,7 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Size
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
                 <a class="dropdown-item" href="#">XS</a>
                 <a class="dropdown-item" href="#">Small</a>
                 <a class="dropdown-item" href="#">Medium action</a>
@@ -90,8 +90,16 @@
             </div>
           </div>
           <hr>
-          <div class="men-card" (click)="goToItem()">
-            <div>
+          <div class="men-card" (click)="goToItem()"  >
+            <div class="card-tall" *ngFor="let clothing of clothings; let i = index">
+              <img class="img-fit pointer" [src]="clothing.clothing_url">
+              <!-- <h3 class="pointer" >{{clothing.clothing_type}}</h3> -->
+              <h3 class="pointer" >{{clothing.clothing_name}}</h3>
+              <a><h3 class="pointer" >{{clothing.price}}</h3></a>
+              <!-- <a href="#">$30.00</a> -->
+            </div>
+            
+            <!-- <div>
               <img class="img-fit pointer" src="../../assets/men-card1.jpg">
               <h3 class="pointer">The Air Crew Tee</h3>
               <a href="#">$30.00</a>
@@ -105,12 +113,7 @@
               <img class="img-fit pointer" src="../../assets/men-card1.jpg">
               <h3 class="pointer">The Air Crew Tee</h3>
               <a href="#">$30.00</a>
-            </div>
-            <div>
-              <img class="img-fit pointer" src="../../assets/men-card1.jpg">
-              <h3 class="pointer">The Air Crew Tee</h3>
-              <a href="#">$30.00</a>
-            </div>
+            </div> -->
           </div>
 
         </div>

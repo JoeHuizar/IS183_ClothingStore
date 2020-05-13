@@ -5,29 +5,29 @@
 </nav>
 
 <ul class="nav justify-content-end nav-action-container">
-  <li class="nav-item">
+  <!-- <li class="nav-item">
     <button mat-raised-button color="primary" (click)="createCar()">Add New Car</button>
-  </li>
+  </li> -->
   <li class="nav-item">
     <button mat-raised-button color="primary" (click)="createClothing()">Add New Clothing</button>
   </li>
-  <li class="nav-item">
+  <!-- <li class="nav-item">
     <button mat-raised-button color="primary" (click)="showCars()">Get Cars</button>
-  </li>
+  </li> -->
   <li class="nav-item">
     <button mat-raised-button color="primary" (click)="refresh()">Get Clothings</button>
     </li>
-  <li class="nav-item">
-    <button mat-raised-button color="primary" (click)="getClothings()">Pink</button>
-  </li>
-  <li class="nav-item">
+  <!-- <li class="nav-item">
+    <button mat-raised-button color="primary" (click)="getClothingByColor()">Pink</button>
+  </li> -->
+  <!-- <li class="nav-item">
     <a [routerLink]="'/app-store'">Edit Inventory</a> 
-  </li>
+  </li> -->
 </ul>
 
 <div class="contact-grid">
   <div class="gallery-grid">
-    <mat-card class="example-card" *ngFor="let clothing of clothings; let i = index">
+    <!-- <mat-card class="example-card" *ngFor="let car of cars; let i = index">
       <mat-card-content>
         <img class="cover" [src]="car.image_url" alt="bike">
         <p>
@@ -70,7 +70,7 @@
           <button mat-raised-button color="warn" (click)='removeCar(car, i)' >Delete</button>
         </div>
       </mat-card-actions>
-    </mat-card>
+    </mat-card> -->
     <mat-card class="example-card" *ngFor="let clothing of clothings; let i = index">
       <mat-card-content>
         <img class="cover" [src]="clothing.clothing_url" alt="bike">
@@ -84,12 +84,12 @@
         </p> 
         <p>
           <label for="price">Clothing Type</label>
-          <input [(ngModel)]="clothing.clothing_type" type="text" class="form-control" placeholder="Make" aria-label="price"
+          <input [(ngModel)]="clothing.clothing_type" type="text" class="form-control" placeholder="Clothing Type" aria-label="price"
             aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="price">Clothing Color</label>
-          <input [(ngModel)]="clothing.color" type="text" class="form-control" placeholder="Model" aria-label="price"
+          <input [(ngModel)]="clothing.color" type="text" class="form-control" placeholder="Color" aria-label="price"
             aria-describedby="basic-addon1">
         </p> 
         <p>
@@ -99,17 +99,17 @@
         </p>
         <p>
           <label for="price">Price</label>
-          <input [(ngModel)]="clothing.price" type="text" class="form-control" placeholder="$00.00" aria-label="price"
+          <input [(ngModel)]="clothing.price" type="text" class="form-control" placeholder="Price" aria-label="price"
             aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="quantity">Quantity</label>
-          <input [(ngModel)]="clothing.quantity" type="text" class="form-control" placeholder="Price" aria-label="price"
+          <input [(ngModel)]="clothing.quantity" type="text" class="form-control" placeholder="Quantity" aria-label="price"
             aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="Brand">Brand</label>
-          <input [(ngModel)]="clothing.brand" type="text" class="form-control" placeholder="Price" aria-label="price"
+          <input [(ngModel)]="clothing.brand" type="text" class="form-control" placeholder="Brand" aria-label="price"
             aria-describedby="basic-addon1">
         </p>
       </mat-card-content>

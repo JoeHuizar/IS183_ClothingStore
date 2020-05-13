@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { MenComponent } from './men/men.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { WomenComponent } from './women/women.component'
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 const appRoutes: Routes = [
   {
@@ -17,6 +18,9 @@ const appRoutes: Routes = [
     path: 'app-cart',
     component: CartComponent
   }, {
+    path: 'app-shopping-cart',
+    component: ShoppingCartComponent
+  },{
     path: 'app-men',
     component: MenComponent
   }, {
