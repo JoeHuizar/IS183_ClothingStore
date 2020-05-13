@@ -31,7 +31,7 @@ export class CartComponent implements OnInit {
   ) { }
 
   async ngOnInit() {
-    // await this.refresh();
+    await this.refresh();
   }
 
   async refresh() {
